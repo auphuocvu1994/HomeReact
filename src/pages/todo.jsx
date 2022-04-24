@@ -9,8 +9,6 @@ function ToDo() {
 
     useEffect(() => {
 
-        console.log("get data from storage" + lstNote)
-
         const lst = JSON.parse(localStorage.getItem('lstNote'));
         if (lst) {
             setlstNote(lst);
