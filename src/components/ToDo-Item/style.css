@@ -1,0 +1,49 @@
+.todo__box li {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    border-bottom: 1px solid #e5e5e5;
+    font-weight: 500;
+}
+.todo__box li:hover {
+    cursor: pointer;
+}
+.todo__box li i{
+    cursor: pointer;
+    color: #b6b6b6;
+    opacity: 0.7;
+    transition: all 0.5s ease;
+}
+.todo__box li i:hover{
+    cursor: pointer;
+    opacity: 1;
+    color: #252525;
+}
+
+ul li>span {
+    max-width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+ul li>span.completed {
+    text-decoration: line-through;
+    color: #b6b6b6;
+}
+
+.btnDelete{
+    display:none;
+}
+
+li:hover .btnDelete{
+    display: block;
+}
+
+.disable span{
+    color: darkgray;
+    text-decoration: line-through;
+}
